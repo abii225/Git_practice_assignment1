@@ -3,12 +3,12 @@
 
 let num=13;
 let count=0;
-for(let i=1;i<=num;i-+){
+for(let i=1;i<=num;i++){
 	if(num%i==0){
 		count++;
 	}
 
-}if(count<2){
+}if(count==2){
 	console.log(num,"is a prime number")
 }
 else{
@@ -19,8 +19,8 @@ else{
 // problem 2. // check for palindrom
 let str="racecar";
 let bag="";
-for(let i=str.length-1;i<=0;i+-){
-	bag+=str[i]
+for(let i=str.length-1;i>=0;i--){
+	bag+=str[i];
 }if(str==bag){
 	console.log("It is a palaindrome")
 }else{
